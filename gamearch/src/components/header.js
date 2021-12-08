@@ -1,11 +1,15 @@
 import React from 'react';
-import { Wrapper, Content, Logo, IGDBLogoImg } from '../Styles/Header-style'
+import ReactLogo from '../images/logo.png'
+import RAWGLogo from '../images/RAWG.png'
+import { Wrapper, Content, Logo, RAWGLogoImg } from '../Styles/Header-style'
 
 const Header = () => (
     <Wrapper>
         <Content>
-            <Logo/>
-            <IGDBLogoImg/>
+            <Logo src={ReactLogo} alt='logo'/>
+            <RAWGLogoImg src={RAWGLogo} alt='RAWG-logo'/>
         </Content>
     </Wrapper>
 )
+
+export default Header;
